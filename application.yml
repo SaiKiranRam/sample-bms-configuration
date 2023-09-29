@@ -15,5 +15,6 @@ spring:
   datasource:
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/cts_bms
     username: root
+    password: FlyingF!r3
     driver-class-name: com.mysql.cj.jdbc.Driver
 
