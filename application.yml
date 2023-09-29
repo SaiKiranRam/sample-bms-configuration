@@ -4,3 +4,16 @@ eureka:
       fetchRegistry: true
       service-url:
          defaultZone: 'http://localhost:8001/eureka/'
+
+
+# --------------     DATABASE CONFIGURATIONS     --------------
+spring:
+  jpa:
+    #    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/cts_bms
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
